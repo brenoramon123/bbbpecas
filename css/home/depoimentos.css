@@ -1,0 +1,120 @@
+.depoimentos-bg{
+    background: #85CFF9;
+    padding-top: 120px;
+    padding-bottom: 60px;
+}
+
+.profile{
+    height: 50px;
+    border-radius: 50%;
+    border: 3px solid var(--cor-p1);
+    width: 50px;
+    margin: 0 auto;
+    margin-top: -36px;
+    background-color: var(--cor-1);
+    transition: 0.2s;
+    position: absolute;
+    left: 40%;
+}
+
+@media (max-width: 1400px) {
+    .profile{
+        height: 50px;
+        border-radius: 50%;
+        border: 3px solid var(--cor-p1);
+        width: 50px;
+        margin: 0 auto;
+        margin-top: -36px;
+        background-color: var(--cor-1);
+        transition: 0.2s;
+        position: absolute;
+        left: 40%;
+    }
+}
+
+.depoimentos-bg ul li{
+    max-width: 700px;
+    position: relative;
+    border-radius: 4px;
+    background-color: yellow;
+    padding: 16px 32px;
+    min-height: 200px;
+    max-height: min-content;  
+    background-color: #85CFF9;
+    border: 1px solid var(--cor-7);
+}
+
+.depoimentos-bg ul li:hover .profile{
+    width: 55px;
+    height: 55px;
+    
+
+}
+
+.depoimentos-bg ul{
+    display: flex;
+    
+    gap: 60px;
+}
+
+.depoimentos-bg h2{
+    margin-bottom: 57px;
+    color: var(--cor-7);
+}
+
+.depoimentos-bg h3{
+    color: var(--cor-11);
+    margin-top: 38px;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.depoimentos-bg li::after{
+    content: ',,';
+    color: var(--cor-5);
+    font-size: 120px;
+    position: absolute;
+    top: 70px;
+    left: 150px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.depoimentos-bg img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+@media (max-width: 1200px){
+    .depoimentos-bg li::after{
+        content: initial;
+    }
+    
+ 
+}
+
+@media (max-width: 800px){
+    .depoimentos-bg ul{
+        overflow-x: scroll;
+        padding-bottom: 32px;
+        padding-top: 32px;
+    }
+
+    .depoimentos-bg ul li{
+        min-width: 200px;
+    }
+    
+    
+ 
+}
+
+.depoimentos ul{
+    border: 1px solid var(--cor-7);
+    border-radius: 16px;
+    padding: 64px;
+}
+
+.depoimentos p{
+    color: var(--cor-8);
+}

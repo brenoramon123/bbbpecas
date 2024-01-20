@@ -1,0 +1,12 @@
+.tooltip{
+    position: absolute;
+    z-index:500;
+    background-color: rgba(0, 0, 0, .7);
+    box-shadow: 0 0 0 .5px var(--cor-8),0 0 0 6px rgba(0, 0, 0, .7);
+    padding: .5rem;
+    color: var(--cor-3);
+    font-family: 'Poppins';
+    font-size: .875rem;
+    border-radius: 4px;
+    max-width: 170px;
+}

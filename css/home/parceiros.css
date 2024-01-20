@@ -1,0 +1,78 @@
+.parceiros{
+    padding-top: 60px;
+    padding-bottom: 120px;
+}
+
+.parceiros h2{
+    margin-bottom: 60px;
+}
+
+.parceiros ul{
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.parceiros ul li{
+
+    padding: 32px;
+    display: flex;
+    height: 100px;
+    border-left: 2px solid var(--cor-2);
+}
+
+
+.parceiros .moto{
+    width: 80px;
+    margin: auto;
+}
+
+.parceiros .samsung{
+    width: 100%;
+    margin: auto;
+    height: 100%;
+    
+}
+
+.parceiros .apple{
+    width: 80px;
+    margin: auto;
+}
+
+.parceiros .xiaomi{
+    width: 80px;
+    margin: auto;
+}
+
+.parceiros li:first-child{
+    border-left: none;
+}
+
+@media (max-width: 800px){
+    .parceiros{
+        padding-bottom: 60px;
+    }
+
+    .parceiros h2{
+        margin-bottom: 20px;
+    }
+
+    .parceiros ul{
+        grid-template-columns: repeat(2,1fr);
+        padding: 30px;
+    }
+
+    .parceiros ul li:first-child{
+        border-bottom: 2px solid var(--cor-2);
+    }
+
+    .parceiros ul li:nth-child(2){
+        border-bottom: 2px solid var(--cor-2);
+    }
+
+    .parceiros ul li:nth-child(3){
+        border-left: none;
+    }
+}
